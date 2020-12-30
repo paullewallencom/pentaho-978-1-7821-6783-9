@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MyFirstInteractiveWebApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>MyFirstInteractiveWebApp</servlet-name>
+    <servlet-class>com.pentaho.webapp.MyFirstInteractiveWebApp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyFirstInteractiveWebApp</servlet-name>
+    <url-pattern>/report</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MySubReport</servlet-name>
+    <servlet-class>com.pentaho.webapp.MySubReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MySubReport</servlet-name>
+    <url-pattern>/subreport</url-pattern>
+  </servlet-mapping>
+</web-app>
